@@ -15,8 +15,7 @@ class _HomePageState extends State<HomePage> {
     return Scaffold(
         appBar: AppBar(
           title: Text(
-            'Home Page',
-            style: TextStyle(fontWeight: FontWeight.bold),
+            'Home Page'
           ),
         ),
         body: Container(
