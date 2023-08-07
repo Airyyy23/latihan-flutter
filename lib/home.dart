@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:latihan_flutter_2/MonthPage.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -23,7 +24,8 @@ class _HomePageState extends State<HomePage> {
         children: [
           Expanded(
             child: ElevatedButton(
-              onPressed: ,
+              onPressed: _goToMonthPage,
+              child: Text("data"),
             ),
           )
         ],
@@ -32,6 +34,6 @@ class _HomePageState extends State<HomePage> {
   }
 
   void _goToMonthPage() {
-    Navigator.push(context, MaterialPageRoute(builder: (context) => ))
+    Navigator.push(context, MaterialPageRoute(builder: (context) => Monthpage()));
   }
 }
