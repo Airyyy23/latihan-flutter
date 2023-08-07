@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:latihan_flutter_2/DayPage.dart';
 import 'package:latihan_flutter_2/MonthPage.dart';
+import 'package:latihan_flutter_2/timpage.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -36,7 +37,16 @@ class _HomePageState extends State<HomePage> {
                   onPressed: _goToDayPage,
                   child: Text("Data Hari"),
                 ),
-              )
+              ),
+              SizedBox(
+                width: 20,
+              ),
+              Expanded(
+                child: ElevatedButton(
+                  onPressed: _goTotimepage,
+                  child: Text("Data tim"),
+                ),
+              ),
             ],
           ),
         ));
@@ -49,5 +59,8 @@ class _HomePageState extends State<HomePage> {
 
   void _goToDayPage() {
     Navigator.push(context, MaterialPageRoute(builder: (context) => DayPage()));
+  }
+  void _goTotimepage() {
+    Navigator.push(context, MaterialPageRoute(builder: (context) => timpage()));
   }
 }

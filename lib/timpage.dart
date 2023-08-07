@@ -1,28 +1,18 @@
 import 'package:flutter/material.dart';
 
-class Monthpage extends StatefulWidget {
-  const Monthpage({super.key});
+class timpage extends StatefulWidget {
+  const timpage({super.key});
 
   @override
-  State<Monthpage> createState() => _MonthpageState();
+  State<timpage> createState() => _timpageState();
 }
-
-class _MonthpageState extends State<Monthpage> {
+class _timpageState extends State<timpage> {
   @override
   Widget build(BuildContext context) {
     List<String> months = [
-      'Januari',
-      'Februari',
-      'Maret',
-      'April',
-      'Mei',
-      'Juni',
-      'Juli',
-      'Agustus',
-      'September',
-      'Oktober',
-      'November',
-      'Desember '
+      'Seno',
+      'arya',
+      'rafi'
     ];
     return Scaffold(
       appBar: AppBar(
@@ -34,8 +24,8 @@ class _MonthpageState extends State<Monthpage> {
           return Container(
             decoration: BoxDecoration(
                 border: Border(
-              bottom: BorderSide(color: Colors.grey.shade300, width: 1.0),
-            )),
+                  bottom: BorderSide(color: Colors.grey.shade300, width: 1.0),
+                )),
             child: ListTile(
               title: Text(
                 months[index],
@@ -47,3 +37,4 @@ class _MonthpageState extends State<Monthpage> {
     );
   }
 }
+
